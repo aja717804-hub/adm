@@ -1426,14 +1426,13 @@
                                                     </div>
                                                     <div className="text-center md:text-left flex-1 space-y-1">
                                                         <h2 className="text-lg font-bold">{alumni.name}</h2>
-                                                        <p className="text-xs text-purple-200">SDIT ANNIHAYAH • NISN: {alumni.nisn} • NIS: {alumni.nis}</p>
+                                                        <p className="text-xs text-white-200">SDIT ANNIHAYAH • NISN: {alumni.nisn} • NIS: {alumni.nis}</p>
                                                         
                                                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 mt-2 border-t border-white/10 text-xs">
-                                                            <div><p className="text-purple-300">Tempat Lahir</p><p className="font-semibold">{alumni.pob}</p></div>
-                                                            <div><p className="text-purple-300">Tanggal Lahir</p><p className="font-semibold">{alumni.dob}</p></div>
-                                                            <div><p className="text-purple-300">Nama Ibu</p><p className="font-semibold">{alumni.dob}</p></div>
-                                                            <div><p className="text-purple-300">Tanggal Lulus</p><p className="font-semibold">{alumni.graduationDate || "-"}</p></div>
-                                                            <div><p className="text-purple-300">Rata-Rata Ijazah</p><p className="font-bold text-yellow-300">{alumni.graduationAvg || "-"}</p></div>
+                                                            <div><p className="text-white-300">Tempat Lahir</p><p className="font-semibold">{alumni.pob}</p></div>
+                                                            <div><p className="text-white-300">Tanggal Lahir</p><p className="font-semibold">{alumni.dob}</p></div>
+                                                            <div><p className="text-white-300">Tanggal Lulus</p><p className="font-semibold">{alumni.graduationDate || "-"}</p></div>
+                                                            <div><p className="text-white-300">Rata-Rata Ijazah</p><p className="font-bold text-yellow-300">{alumni.graduationAvg || "-"}</p></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2035,7 +2034,7 @@
                                         </div>
                                         <div>
                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Nama Ayah</label>
-                                            <input type="text" requred placeholder="Contoh: Zahran" value={studentForm.pob} onChange={(e) => setStudentForm({ ...studentForm, pob: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
+                                            <input type="text" required placeholder="Contoh: Zahran" value={studentForm.pob} onChange={(e) => setStudentForm({ ...studentForm, pob: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
                                         </div>
                                         <div>
                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Nama Ibu</label>
